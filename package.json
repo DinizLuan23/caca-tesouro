@@ -1,9 +1,9 @@
 {
-  "name": "caca-tesouro",
+  "name": "mestre-mandou",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://DinizLuan23.github.io/caca-tesouro",
+  "homepage": "https://DinizLuan23.github.io/mestre-mandou",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
