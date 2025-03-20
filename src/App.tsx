@@ -2,10 +2,19 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const items = [
-  "1º Chaveiro 🔑",
-  "2º Chaveiro 🔑",
-  "Tartaruguinha 🐢",
-  "3º Chaveiro 🔑"
+  "1º Regra: Não pode falar 👀",
+  "2º Regra: Não pode reclamar 👀",
+  "Pegar o chaveiro de Santos 🔑",
+  "Pegar o chaveiro de Salvador 🔑",
+  "Pegar o chaveiro de Chinelo 🔑",
+  "Pegar o barquinho 🛥️",
+  "Tentar prender os chaveiros no barquinho 🔑🛥️",
+  "Pegar a tartaruguinha 🐢",
+  "Entregar o barquinho para o Luan 🛥️",
+  "Entregar a tartaruguinha para o Luan 🐢",
+  "Obs: Lembre das primeiras regras 👀",
+  "Tentar abrir a tartaruguinha na mão do Luan 🐢",
+  "Tá liberada pra falar agora 👀"
 ];
 
 export default function TreasureHunt() {
@@ -22,28 +31,28 @@ export default function TreasureHunt() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-300 to-purple-300 p-4 flex flex-col items-center justify-center">
-      {/* Fase da Caça ao Tesouro */}
         <div className="w-full max-w-md bg-white rounded-lg shadow-xl p-6">
-          <h1 className="text-3xl font-bold text-gray-800 text-center">Caça ao Tesouro!</h1>
+          <h1 className="text-3xl font-bold text-gray-800 text-center">Mestre Mandou!</h1>
 
-          {/* Fase do Pedido de Namoro */}
           {winner && (
             <motion.div
-            initial={{ scale: 0 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="text-center p-6 bg-green-500 text-white rounded-lg shadow-lg mt-4"
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.5 }}
+              className="text-center p-6 bg-green-500 text-white rounded-lg shadow-lg mt-4"
             >
               <h2 className="text-2xl font-bold">Parabéns!</h2>
-              <p>Você encontrou todos os tesouros!</p>
-              <p className="bg-orange-500 mt-6 rounded-sm text-lg font-medium">Mas falta uma coisinha ainda 👀🐢!</p>
+              <p>Você completou todas as tarefas!</p>
+              <p className="bg-orange-500 mt-6 rounded-sm text-lg font-medium">Será que foi SIM ou NÃO ?</p>
+              <p className="bg-orange-500 mt-6 rounded-sm text-lg font-medium">Bom... De qualquer forma você já ganhou meu coração ❣️</p>
+              <p className="bg-orange-500 mt-6 rounded-sm text-lg font-medium">(Foi muito Brega 👀 ? kkk)</p>
             </motion.div>
           )}
 
           {!winner && (
             <>
               <h2 className="text-xl text-gray-700 text-center mt-2 mb-4">
-                Encontre o item abaixo:
+                Siga as tarefas abaixo:
               </h2>
               <motion.div
                 initial={{ scale: 0 }}
@@ -58,7 +67,7 @@ export default function TreasureHunt() {
                 whileTap={{ scale: 0.9 }}
                 className="w-full px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg text-lg font-semibold transition-all duration-300 shadow-lg"
               >
-                Marcar como encontrado!
+                Marcar como concluido!
               </motion.button>
             </>
           )}
