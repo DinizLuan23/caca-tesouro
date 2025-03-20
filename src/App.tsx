@@ -43,9 +43,9 @@ export default function TreasureHunt() {
             >
               <h2 className="text-2xl font-bold">Parabéns!</h2>
               <p>Você completou todas as tarefas!</p>
-              <p className="bg-orange-500 mt-6 rounded-sm text-lg font-medium">Será que foi SIM ou NÃO ?</p>
-              <p className="bg-orange-500 mt-6 rounded-sm text-lg font-medium">Bom... De qualquer forma você já ganhou meu coração ❣️</p>
-              <p className="bg-orange-500 mt-6 rounded-sm text-lg font-medium">(Foi muito Brega 👀 ? kkk)</p>
+              <p className="mt-6 rounded-sm text-lg font-medium">Será que foi SIM ou NÃO ?</p>
+              <p className="mt-6 rounded-sm text-lg font-medium">Bom... De qualquer forma você já ganhou meu coração ❣️</p>
+              <p className="mt-6 rounded-sm text-lg font-medium">(Foi muito Brega 👀 ? kkk)</p>
             </motion.div>
           )}
 
